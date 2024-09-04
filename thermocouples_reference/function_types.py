@@ -100,7 +100,7 @@ class Polynomial_Gaussian_Piecewise_Function(object):
         if out_of_range not in ["raise", "nan", "extrapolate"]:
             raise ValueError("invalid out_of_range parameter",out_of_range)
 
-        T = np.array(T, copy=False, order='A')
+        T = np.array(T, order='A')
         emf_choices = [None]
 
         # We go through the table, determining the selector which is used
